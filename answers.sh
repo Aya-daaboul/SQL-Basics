@@ -54,3 +54,22 @@ select * from emp_company;
 select employee_name from emp_company where Date <2000;
 
 select Company from employees where Role="Graphic Designer"
+
+### Count & filters 
+
+1-   select name from students
+       where points=(select max(points) from students)
+
+2-   select AVG(points) 
+      from students
+
+3-   select count(Name) 
+     from students where points=500
+
+ 4-   select name 
+      from students where name like '%s%'
+
+5-   select name,points 
+      from students 
+      order by points DESC
+
