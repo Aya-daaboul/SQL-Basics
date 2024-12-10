@@ -27,3 +27,20 @@
 7- update students 
     set points=points*0.85
     where name="Alex"; //decreases by 15%
+
+### Creating Table 
+
+CREATE TABLE "graduates"(
+'ID'    INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+'Name' TEXT NOT NULL UNIQUE,
+`Age`	INTEGER,
+`Gender`	TEXT,
+`Points`	INTEGER,
+'Graduation'    TEXT
+)
+
+insert into graduates values (4, "Layal",18,"F",350,"08/09/2018")
+
+delete from students where name="Layal"
+
+
