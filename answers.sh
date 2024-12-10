@@ -43,4 +43,14 @@ insert into graduates values (4, "Layal",18,"F",350,"08/09/2018")
 
 delete from students where name="Layal"
 
+### Joins
+CREATE TABLE emp_company AS
+SELECT DISTINCT e.Name AS employee_name, c.Name AS company_name, c.Date
+FROM employees AS e
+INNER JOIN companies AS c ON e.Company = c.Name;
 
+select * from emp_company;
+
+select employee_name from emp_company where Date <2000;
+
+select Company from employees where Role="Graphic Designer"
